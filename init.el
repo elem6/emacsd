@@ -10,18 +10,19 @@
 (package-initialize)
 
 (when (memq window-system '(mac ns))
+  (load "~/.emacs.d/config/ocaml.el")
+  (load "~/.emacs.d/config/latex.el")
   (exec-path-from-shell-initialize))
+
+(load "~/.emacs.d/config/scheme.el")
+(load "~/.emacs.d/config/lisp.el")
+(load "~/.emacs.d/config/avy.el")
+
 
 ;;ido mode
 (require 'ido)
 (ido-mode t)
 (ido-everywhere 1)
-
-(load "~/.emacs.d/config/ocaml.el")
-(load "~/.emacs.d/config/scheme.el")
-(load "~/.emacs.d/config/lisp.el")
-(load "~/.emacs.d/config/avy.el")
-(load "~/.emacs.d/config/latex.el")
 
 ;; (require 'web-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
@@ -38,4 +39,3 @@
 
 (load "server")
 (unless (server-running-p) (server-start))
-
