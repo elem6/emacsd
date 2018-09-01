@@ -39,20 +39,3 @@
 (load "server")
 (unless (server-running-p) (server-start))
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("6a23db7bccf6288fd7c80475dc35804c73f9c9769ad527306d2e0eada1f8b466" default)))
- '(package-selected-packages
-   (quote
-    (merlin validate utop slime-company rainbow-delimiters paredit magit idris-mode geiser flycheck-haskell f avy-zap auctex-latexmk))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

@@ -1,6 +1,5 @@
 ;; -*- lexical-binding: t -*-
 
-(require 'validate)
 (setq inferior-lisp-program "sbcl")
 ;;(setq inferior-lisp-program "ccl64")
 (setq slime-contribs '(slime-fancy))
