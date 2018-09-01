@@ -3,8 +3,8 @@
 (load "~/.emacs.d/config/ui.el")
 (load "~/.emacs.d/config/edit.el")
 (setq package-archives '(
-			 ("gnu" . "http://elpa.gnu.org/packages/")
-			 ("melpa" . "http://melpa.milkbox.net/packages/")
+                         ("gnu" . "http://elpa.gnu.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")
                          ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")
                          ))
 (package-initialize)
